@@ -175,6 +175,23 @@ p {
   left: 212px;
 }
 
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.row input {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e6e5ea;
+  margin-top: 0;
+}
+
+.row img {
+  display: none;
+}
+
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 24px;
@@ -245,5 +262,22 @@ p {
   .generate img {
     top: -42px;
     left: 300px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .row input {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #e6e5ea;
+    margin-top: 0;
+  }
+
+  .row img {
+    display: none;
   }
 }
