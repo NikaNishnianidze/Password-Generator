@@ -42,3 +42,135 @@ h1 {
   color: #e6e5ea;
   outline: none;
 }
+
+.main-container {
+  width: 343px;
+  background-color: #24232c;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin-top: 16px;
+  font-size: 16px;
+  line-height: 21.12px;
+}
+
+.length {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 16px;
+  line-height: 21.12px;
+  color: #e6e5ea;
+}
+
+h3 {
+  font-size: 16px;
+  line-height: 21.12px;
+  color: #a4ffaf;
+}
+
+.main-container input {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  margin-top: 18px;
+  width: 311px;
+  height: 8px;
+  background: linear-gradient(to right, #a4ffaf 0%, #18171f 0%);
+}
+
+.main-container input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 28px;
+  height: 28px;
+  background-color: #e6e5ea;
+  border-radius: 50%;
+}
+
+.include {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-top: 17px;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e6e5ea;
+}
+
+.box img {
+  display: none;
+}
+
+h4 {
+  color: #e6e5ea;
+  font-size: 16px;
+  line-height: 21.12px;
+}
+
+.strength-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 311px;
+  background-color: #18171f;
+  padding: 14px 16px;
+  margin-top: 32px;
+}
+
+h5 {
+  color: #817d92;
+  font-size: 16px;
+  line-height: 21.12px;
+}
+
+.bottom-box {
+  width: 10px;
+  height: 28px;
+  border: 2px solid #e6e5ea;
+}
+
+p {
+  color: #e6e5ea;
+  font-size: 18px;
+  line-height: 23.76px;
+}
+
+.strength-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.generate {
+  position: relative;
+  margin-top: 16px;
+}
+
+.generate button {
+  width: 311px;
+  padding: 18px 0px;
+  color: #24232c;
+  font-size: 16px;
+  line-height: 21.12px;
+  background-color: #a4ffaf;
+  border: none;
+  font-weight: 700;
+}
+
+.generate img {
+  position: relative;
+  top: -39px;
+  left: 212px;
+}
