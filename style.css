@@ -174,3 +174,76 @@ p {
   top: -39px;
   left: 212px;
 }
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 24px;
+    line-height: 31.68px;
+  }
+
+  .input-container {
+    width: 540px;
+    padding: 19px 32px;
+    margin-top: 31px;
+  }
+
+  .main-container {
+    width: 540px;
+    margin-top: 24px;
+    padding: 24px 32px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 23.76px;
+  }
+
+  h3 {
+    font-size: 32px;
+    line-height: 42.24px;
+  }
+
+  .main-container input {
+    width: 476px;
+    margin-top: 26px;
+  }
+
+  .include {
+    margin-top: 32px;
+  }
+
+  h4 {
+    font-size: 18px;
+    line-height: 23.76px;
+  }
+
+  .strength-container {
+    width: 476px;
+    padding: 21px 31.5px;
+  }
+
+  h5 {
+    font-size: 18px;
+    line-height: 21.12px;
+  }
+
+  p {
+    font-size: 24px;
+    line-height: 31.68px;
+    margin-right: 5px;
+  }
+
+  .generate {
+    margin-top: 32px;
+  }
+
+  .generate button {
+    width: 476px;
+    padding: 21px 0px;
+  }
+
+  .generate img {
+    top: -42px;
+    left: 300px;
+  }
+}
