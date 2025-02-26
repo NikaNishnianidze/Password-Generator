@@ -9,5 +9,66 @@
     <script src="./script.js" defer></script>
     <title>Password Generator</title>
   </head>
-  <body></body>
+  <body>
+    <h1>Password Generator</h1>
+    <div class="input-container">
+      <input type="text" />
+      <img src="./Assets/icon-copy.svg" alt="copy to clipboard icon" />
+    </div>
+    <div class="main-container">
+      <div class="length">
+        <h2>Character Length</h2>
+        <h3>1</h3>
+      </div>
+      <input
+        type="range"
+        min="1"
+        max="18"
+        value="1"
+        id="myRange"
+        class="range"
+      />
+
+      <div class="include">
+        <div class="upper">
+          <div class="box">
+            <img src="./Assets/icon-check.svg" alt="check icon" />
+          </div>
+          <h4>Include Uppercase Letters</h4>
+        </div>
+        <div class="lower">
+          <div class="box">
+            <img src="./Assets/icon-check.svg" alt="check icon" />
+          </div>
+          <h4>Include Lowercase Letters</h4>
+        </div>
+        <div class="numbers">
+          <div class="box">
+            <img src="./Assets/icon-check.svg" alt="check icon" />
+          </div>
+          <h4>Include Numbers</h4>
+        </div>
+        <div class="symbols">
+          <div class="box">
+            <img src="./Assets/icon-check.svg" alt="check icon" />
+          </div>
+          <h4>Include Symbols</h4>
+        </div>
+      </div>
+      <div class="strength-container">
+        <h5>STRENGTH</h5>
+        <div class="strength-box">
+          <p></p>
+          <div class="bottom-box" id="myStrength"></div>
+          <div class="bottom-box" id="myStrength"></div>
+          <div class="bottom-box" id="myStrength"></div>
+          <div class="bottom-box" id="myStrength"></div>
+        </div>
+      </div>
+      <div class="generate">
+        <button>GENERATE</button>
+        <img src="./Assets/icon-arrow-right.svg" alt="arrow-right icon" />
+      </div>
+    </div>
+  </body>
 </html>
