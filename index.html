@@ -12,7 +12,7 @@
   <body>
     <h1>Password Generator</h1>
     <div class="input-container">
-      <input type="text" readonly />
+      <input type="text" readonly id="password" />
       <img src="./Assets/icon-copy.svg" alt="copy to clipboard icon" />
     </div>
     <div class="main-container">
@@ -31,7 +31,12 @@
 
       <div class="include">
         <div class="upper row">
-          <input type="checkbox" class="checkbox checkbox1" />
+          <input
+            type="checkbox"
+            class="checkbox checkbox1"
+            id="myCheckbox1"
+            onchange="check()"
+          />
           <img
             src="./Assets/icon-check.svg"
             alt="check icon"
@@ -39,10 +44,15 @@
             class="arrow1"
           />
 
-          <h4>Include Uppercase Letters</h4>
+          <label for="myCheckbox1">Uppercase Letters</label>
         </div>
         <div class="lower row">
-          <input type="checkbox" class="checkbox checkbox2" />
+          <input
+            type="checkbox"
+            class="checkbox checkbox2"
+            id="myCheckbox2"
+            onchange="check()"
+          />
           <img
             src="./Assets/icon-check.svg"
             alt="check icon"
@@ -50,43 +60,63 @@
             class="arrow2"
           />
 
-          <h4>Include Lowercase Letters</h4>
+          <label for="myCheckbox2">Lowercase Letters</label>
         </div>
         <div class="numbers row">
-          <input type="checkbox" class="checkbox checkbox3" />
+          <input
+            type="checkbox"
+            class="checkbox checkbox3"
+            id="myCheckbox3"
+            onchange="check()"
+          />
           <img
             src="./Assets/icon-check.svg"
             alt="check icon"
             id="myCheck"
             class="arrow3"
           />
-
-          <h4>Include Numbers</h4>
+          <label for="myCheckbox3">Include Numbers</label>
         </div>
         <div class="symbols row">
-          <input type="checkbox" class="checkbox checkbox4" />
+          <input
+            type="checkbox"
+            class="checkbox checkbox4"
+            id="myCheckbox4"
+            onchange="check()"
+          />
           <img
             src="./Assets/icon-check.svg"
             alt="check icon"
             id="myCheck"
             class="arrow4"
           />
-
-          <h4>Include Symbols</h4>
+          <label for="myCheckbox4">Include Symbols</label>
         </div>
       </div>
       <div class="strength-container">
         <h5>STRENGTH</h5>
         <div class="strength-box">
-          <p>NONE</p>
-          <div class="bottom-box box1" id="myStrength"></div>
-          <div class="bottom-box box2" id="myStrength "></div>
-          <div class="bottom-box box3" id="myStrength  "></div>
-          <div class="bottom-box box4" id="myStrength "></div>
+          <p id="strength-text">NONE</p>
+          <div class="bottom-box box1" id="myStrength" data-class="first"></div>
+          <div
+            class="bottom-box box2"
+            id="myStrength "
+            data-class="second"
+          ></div>
+          <div
+            class="bottom-box box3"
+            id="myStrength  "
+            data-class="third"
+          ></div>
+          <div
+            class="bottom-box box4"
+            id="myStrength "
+            data-class="fourth"
+          ></div>
         </div>
       </div>
       <div class="generate">
-        <button>GENERATE</button>
+        <button onclick="createPassword()">GENERATE</button>
         <img src="./Assets/icon-arrow-right.svg" alt="arrow-right icon" />
       </div>
     </div>

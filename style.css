@@ -103,7 +103,7 @@ h3 {
   margin-top: 17px;
 }
 
-h4 {
+label {
   color: #e6e5ea;
   font-size: 16px;
   line-height: 21.12px;
@@ -185,12 +185,16 @@ p {
   left: -20px;
 }
 
-.too-weak .box1 {
-  background-color: #f64a4a;
-  border: 2px solid#f64a4a;
-}
-
 .too-weak .upper {
+  gap: 3px;
+}
+.weak .lower {
+  gap: 3px;
+}
+.medium .numbers {
+  gap: 3px;
+}
+.strong .symbols {
   gap: 3px;
 }
 
@@ -200,27 +204,16 @@ p {
 
 .too-weak .checkbox1 {
   background-color: #a4ffaf;
-}
-
-.weak .box2 {
-  background-color: #fb7c58;
-  border: 2px solid #fb7c58;
-}
-
-.weak .checkbox2 {
-  background-color: #a4ffaf;
+  border: 1px soldi #a4ffaf;
 }
 
 .weak .arrow2 {
   display: block;
 }
 
-.medium .box3 {
-  background-color: #f8cd65;
-}
-
-.strong .bpx4 {
+.weak .checkbox2 {
   background-color: #a4ffaf;
+  border: 1px soldi #a4ffaf;
 }
 
 @media screen and (min-width: 768px) {
@@ -311,6 +304,6 @@ p {
   .row img {
     display: none;
     position: relative;
-    left: -37px;
+    left: -20px;
   }
 }
