@@ -13,8 +13,14 @@
     <h1>Password Generator</h1>
     <div class="input-container">
       <input type="text" readonly id="password" />
-      <img src="./Assets/icon-copy.svg" alt="copy to clipboard icon" />
+      <p id="text-copy"></p>
+      <img
+        src="./Assets/icon-copy.svg"
+        alt="copy to clipboard icon"
+        onclick="copyToClipboard() "
+      />
     </div>
+
     <div class="main-container">
       <div class="length">
         <h2>Character Length</h2>

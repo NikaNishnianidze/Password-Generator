@@ -123,3 +123,13 @@ function updateRangeBackground() {
 slider.addEventListener("input", updateRangeBackground);
 
 updateRangeBackground();
+
+function copyToClipboard() {
+  let copyText = document.getElementById("password");
+  let alert = document.getElementById("text-copy");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  alert.innerHTML = "COPIED";
+  alert.style.color = " #A4FFAF";
+}
