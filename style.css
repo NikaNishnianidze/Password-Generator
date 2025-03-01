@@ -204,7 +204,12 @@ p {
 
 .too-weak .checkbox1 {
   background-color: #a4ffaf;
-  border: 1px soldi #a4ffaf;
+  border: 1px solid #a4ffaf;
+}
+
+.too-weak .box1 {
+  background-color: #f64a4a;
+  border: 2px solid #f64a4a;
 }
 
 .weak .arrow2 {
@@ -213,9 +218,87 @@ p {
 
 .weak .checkbox2 {
   background-color: #a4ffaf;
-  border: 1px soldi #a4ffaf;
+  border: 1px solid #a4ffaf;
 }
 
+.weak .box1 {
+  background-color: #f64a4a;
+  border: 2px solid #f64a4a;
+}
+
+.medium .arrow3 {
+  display: block;
+}
+
+.medium .checkbox3 {
+  background-color: #a4ffaf;
+  border: 1px solid #a4ffaf;
+}
+
+.medium .box1 {
+  background-color: #f64a4a;
+  border: 2px solid #f64a4a;
+}
+
+.strong .arrow4 {
+  display: block;
+}
+
+.strong .checkbox4 {
+  background-color: #a4ffaf;
+  border: 1px solid #a4ffaf;
+}
+
+.strong .box1 {
+  background-color: #f64a4a;
+  border: 2px solid #f64a4a;
+}
+
+.two-checked .box1 {
+  background-color: #fb7c58;
+  border: 2px solid #fb7c58;
+}
+
+.two-checked .box2 {
+  background-color: #fb7c58;
+  border: 2px solid #fb7c58;
+}
+
+.three-checked .box1 {
+  background-color: #f8cd65;
+  border: 2px solid #f8cd65;
+}
+.three-checked .box2 {
+  background-color: #f8cd65;
+  border: 2px solid #f8cd65;
+}
+.three-checked .box3 {
+  background-color: #f8cd65;
+  border: 2px solid #f8cd65;
+}
+
+.four-checked .box1 {
+  background-color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+
+.four-checked .box2 {
+  background-color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+.four-checked .box3 {
+  background-color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+.four-checked .box4 {
+  background-color: #a4ffaf;
+  border: 2px solid #a4ffaf;
+}
+
+.one-checked .box1 {
+  background-color: #f64a4a;
+  border: 2px solid #f64a4a;
+}
 @media screen and (min-width: 768px) {
   h1 {
     font-size: 24px;
