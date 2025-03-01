@@ -90,6 +90,12 @@ h3 {
   border-radius: 50%;
 }
 
+.main-container input::-webkit-slider-thumb:hover {
+  -webkit-appearance: none;
+  background-color: #18171f;
+  border: 1px solid #a4ffaf;
+}
+
 .include {
   margin-top: 32px;
   display: flex;
@@ -157,6 +163,12 @@ p {
   background-color: #a4ffaf;
   border: none;
   font-weight: 700;
+}
+
+.generate button:hover {
+  background-color: #24232c;
+  border: 2px solid #a4ffaf;
+  color: #a4ffaf;
 }
 
 .generate img {
