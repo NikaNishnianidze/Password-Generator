@@ -14,7 +14,6 @@ slider.oninput = () => {
 };
 
 const passwordBox = document.getElementById("password");
-
 const upperCase = "QWERTYUIOPLKJHGFDSAZXCVBNM";
 const lowerCase = "qwertyuioplkjhgfdsazxcvbnm";
 const numbers = "1234567890";
@@ -23,32 +22,27 @@ const symbols = "!@#$%^&*()_+{}[];:'./?<>|";
 const allChars = upperCase + lowerCase + numbers + symbols;
 
 function createPassword() {
+  const length = parseInt(slider.value);
   let password = "";
+  let availableChars = "";
 
-  if (checkbox1.checked) {
-    password += upperCase[Math.floor(Math.random() * upperCase.length)];
-  }
-  if (checkbox2.checked) {
-    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
-  }
-  if (checkbox3.checked) {
-    password += numbers[Math.floor(Math.random() * numbers.length)];
-  }
-  if (checkbox4.checked) {
-    password += symbols[Math.floor(Math.random() * symbols.length)];
+  if (checkbox1.checked) availableChars += upperCase;
+  if (checkbox2.checked) availableChars += lowerCase;
+  if (checkbox3.checked) availableChars += numbers;
+  if (checkbox4.checked) availableChars += symbols;
+
+  if (availableChars === "") {
+    passwordBox.value = "Please Select An Options";
+    return;
   }
 
-  while (length > password.length) {
-    password += allChars[Math.floor(Math.random() * allChars)];
+  for (let i = 0; i < length; i++) {
+    password +=
+      availableChars[Math.floor(Math.random() * availableChars.length)];
   }
 
   passwordBox.value = password;
 }
-
-checkbox1.addEventListener("change", createPassword);
-checkbox2.addEventListener("change", createPassword);
-checkbox3.addEventListener("change", createPassword);
-checkbox4.addEventListener("change", createPassword);
 
 function check() {
   let checkedCount = 0;
