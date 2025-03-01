@@ -27,25 +27,15 @@ function createPassword() {
 
   if (checkbox1.checked) {
     password += upperCase[Math.floor(Math.random() * upperCase.length)];
-  } else if (checkbox2.checked) {
-    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
-  } else if (checkbox3.checked) {
-    password += numbers[Math.floor(Math.random() * numbers.length)];
-  } else if (checkbox4.checked) {
-    password += symbols[Math.floor(Math.random() * symbols.length)];
   }
-
-  if (checkbox1.checked == true && checkbox2.checked == true) {
-    password += upperCase[Math.floor(Math.random() * upperCase.length)];
+  if (checkbox2.checked) {
     password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
-  } else if (
-    checkbox1.checked == true &&
-    checkbox3.checked == true &&
-    checkbox2.checked == true
-  ) {
-    password += upperCase[Math.floor(Math.random() * upperCase.length)];
-    password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+  }
+  if (checkbox3.checked) {
     password += numbers[Math.floor(Math.random() * numbers.length)];
+  }
+  if (checkbox4.checked) {
+    password += symbols[Math.floor(Math.random() * symbols.length)];
   }
 
   while (length > password.length) {
